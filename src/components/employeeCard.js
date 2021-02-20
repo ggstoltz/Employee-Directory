@@ -1,6 +1,6 @@
 import React from 'react';
 
-function employeeCard(props) {
+function EmployeeCard(props) {
     return (
         // <div className='row'>
         <tr>
@@ -28,4 +28,4 @@ function employeeCard(props) {
 
 }
 
-export default employeeCard;
+export default EmployeeCard;

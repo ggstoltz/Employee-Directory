@@ -1,6 +1,6 @@
 import React from 'react';
 
-function resultsList(props) {
+function ResultsList(props) {
     return(
         <table className="table">
 
@@ -31,4 +31,4 @@ function resultsList(props) {
 
 }
 
-export default resultsList;
+export default ResultsList;

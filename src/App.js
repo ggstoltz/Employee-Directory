@@ -1,11 +1,9 @@
 import React from 'react';
-import './App.css';
-import searchResultArea from './components/searchResultArea';
+import SearchResultArea from './components/SearchResultArea';
 
 function App() {
-  return <searchResultArea />;
+  return <SearchResultArea />;
     
-  
 }
 
 export default App;

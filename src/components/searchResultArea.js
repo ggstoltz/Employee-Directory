@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import searchForm from './searchForm';
-import employeeCard from'./employeeCard';
+import SearchForm from './SearchForm';
+import EmployeeCard from'./EmployeeCard';
 import API from '../utils/API';
 import'./results.css';
 const MaxResults = 20;
 
-class searchResultArea extends Component {
+class SearchResultArea extends Component {
     state = {
         result: [],
         filter: '',
@@ -55,6 +55,11 @@ handleFormSubmit = event => {
     console.log(name);
 
     this.filterEmployees(value);
+    
+    this.setState({
+        [name]: value
+    })
+    this.filterEmployees(value);
     this.filterEmployees(this.state.search);
 };
 
@@ -83,7 +88,7 @@ render() {
         </div>
                 <div className="row">
                 <div className="col-md-6">
-                    <searchForm
+                    <SearchForm
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit}
@@ -121,7 +126,7 @@ render() {
                 </div>
               ) : (<div />)} */}
             {[...this.state.result].map((item) =>
-              <employeeCard
+              <EmployeeCard
                 picture={item.picture}
                 firstName={item.firstName}
                 lastName={item.lastName}
@@ -141,4 +146,4 @@ render() {
 
 }
 
-export default searchResultArea;
+export default SearchResultArea;

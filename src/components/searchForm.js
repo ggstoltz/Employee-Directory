@@ -1,6 +1,6 @@
 import React from 'react';
 
-function searchform(props) {
+function SearchForm(props) {
     return (
         <form>
             <div className='form-info'>
@@ -22,4 +22,4 @@ function searchform(props) {
     );
 }
 
-export default searchform;
+export default SearchForm;
