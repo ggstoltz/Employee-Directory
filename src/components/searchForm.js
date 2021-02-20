@@ -3,14 +3,14 @@ import React from 'react';
 function SearchForm(props) {
     return (
         <form>
-            <div className='form-info'>
+            <div className='form-group'>
                 <label htmlFor='search'>Search:</label>
                 <imput
                         onChange={props.handleImputChange}
                         value={props.search}
                         name='search'
                         type='text'
-                        className='form-select'
+                        className='form-control'
                         placeholder='Search Employees'
                         id='search'
             />
